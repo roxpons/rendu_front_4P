@@ -1,0 +1,1295 @@
+
+    b {
+        font-weight: 300;
+    }
+
+/* =========================================================================== HEADER */
+
+header {
+    height: 700px;
+    margin:-10px;    
+    background: -webkit-linear-gradient(left, #2fe6ef 0%,#004af9 100%);   
+}
+
+/* =========================================================================== MENU HAMBURGER */
+
+.hamburger {
+	width: 28px;
+	height:28px;
+	float:right;
+    position: relative;
+    margin-right: 110px;
+    margin-top: 45px;
+    border-style: solid;
+    border-width: 1px;
+    border-color:white;
+}
+
+.hamburger span {
+	display: block;
+	width:50%;
+	height:1px;
+    background:white;
+    
+}
+
+.hamburger .line1 {
+	position:absolute;
+    left:7px;
+    top:17px;
+    width:30%;
+}
+
+.hamburger .line2 {
+    position:absolute;
+    left: 7px;
+	top:11px;
+	width: 50%;
+}
+
+/* =========================================================================== ICON LOUPE */
+
+nav i{
+    display: inline-block;
+    float:right;
+    margin-right: -65px;
+    margin-top:54px;
+    color: white;
+}
+
+/* ================================================= IPHONE + TEXTE PRES + BOUTON DOWNLOAD */
+
+.container {
+    width: 1170px;
+    clear: both;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.premier_mockup{
+    width: 15%;
+    margin-top: 120px;
+    float: left;
+    margin-left: 260px;
+  
+}
+
+.text_presentation {
+    display: inline-block;
+    clear: both;
+    width: 55%;
+    margin-top: 150px;
+    padding-left: 80px;
+}
+
+.text_presentation h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    color: white;
+    letter-spacing: 1.5px;
+    font-size: 2em;
+    line-height: 45px;
+}
+
+.text_presentation h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    color: white;
+    font-size: 0.6em;
+    width:420px;
+    letter-spacing: 1px;
+    line-height: 15px;
+    margin-bottom:30px;
+}
+
+/* ================================================= BOUTON DOWNLOAD ANIMATION */
+
+.text_presentation button {
+    background-color: transparent;
+    color:white;
+    border: 1px solid #9cc9ee;
+    border-radius:3px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:100;
+    font-size: 0.6em;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes load{
+    0% {width: 0px;}
+    100% {width: 100%;}
+}
+
+.text_presentation button::after{
+    content:'';
+    display: inline-block;
+    width: 0px;
+    height: 100%;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    top: 0px;
+    left: 0px;
+    transition: 1000ms;
+}
+
+.text_presentation button:hover::after{
+    animation: load 1000ms ease 0s 1 normal;
+    animation-fill-mode: forwards;
+}
+
+/* =========================================================================== ICONS fin header */
+
+.icons {
+    margin-left: 50px;
+    margin-top:105px;
+    display: inline-block;
+    color: white;
+}
+
+.fab {
+    padding: 5px;
+}
+
+/* =========================================================================== SECTION 2 */
+
+
+.background {
+    height:550px;
+    background: -webkit-linear-gradient(top, #eef2f5 0%,#eaedf2 100%);
+    margin-top: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    overflow: hidden;
+ 
+}
+.background img {
+    margin-left:1000px;
+    width:18%;
+    margin-top: 25px;
+
+}
+
+/* =========================================================================== 4 BLOCS TEXTE */
+
+.background h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+}
+
+ p {
+    font-family: 'Open Sans', sans-serif; 
+    width: 250px;
+    font-size: 0.7em;
+    color:#696969;
+}
+
+.container_bloc {
+    width: 800px;
+    margin-top:-400px;
+    margin-left:70px;
+}
+
+.container1 {
+    float: right;
+    line-height: 19px;
+}
+
+.container2 {
+    float: right;
+    margin-right: 60px;
+    line-height: 19px;
+}
+
+.container3 {
+    float: right;
+    margin-top: 50px;
+    line-height: 19px;
+
+}
+
+.container4 {
+    float: right;
+    margin-right: 60px;
+    margin-top: 50px;
+    line-height: 19px;
+}
+
+/* ============================================ SECTION 3 ====== screenshots TEXTE */
+
+.screenshot h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    font-weight:200;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 120px;
+    color: #458fe1;
+}
+
+.screenshot p{
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 0.7em;
+    line-height: 19px;
+    
+}
+
+/* ============================================================ SCREENSHOTS ALIGNES */
+
+
+figure {
+    text-align: center;
+}
+
+.screenshot img + img{
+    display: inline-block;
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+.screenshot .image_inactive{
+    opacity: 0.6;
+}
+
+.image_inactive:hover {
+    opacity:1;
+}
+
+/* ============================================================ BULLET POINTS */
+
+.bullet_points {
+    display: block;
+    text-align:center;
+    margin-bottom:100px;
+}
+
+.screenshot  div{        /*POINTS BLEUS SOUS LES BLOCS*/
+    display: inline-block;
+    background-color:#afd9ef;
+    width: 4px;
+    height: 4px;
+    border-radius:4px;
+}
+
+.screenshot .point{     /*PREMIER POINT BLEU GROSSI*/
+    display: inline-block;
+    background-color:#49a9da;
+    width: 6px;
+    height: 6px;
+    border-radius:6px;
+}
+
+/* ============================================================ SECTION 4 HOW IT WORKS */
+
+.howitworks {
+    height:500px;
+    background: -webkit-linear-gradient(top, #eef2f5 0%,#eaedf2 100%);
+    margin-top: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    overflow: hidden;
+}
+.howitworks img {
+    float:right;
+    width:30%;
+    margin-right: 330px;
+}
+
+.howitworks h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    font-weight:200;
+    margin-left:320px;
+    margin-top: 200px;
+    color: #458fe1;
+}
+
+.howitworks p {
+    font-family: 'Open Sans', sans-serif; 
+    width: 420px;
+    font-size: 0.7em;
+    color:#696969;
+    margin-left: 320px;
+    line-height: 19px;
+    margin-top: -15px;
+}
+
+/* ============================================================ PLAY THE VIDEO */
+
+.fa-play-circle {
+color:#458fe1;
+font-size: 25px;
+margin-left: 320px;
+margin-top: 25px;
+}
+
+.howitworks h4 {
+    display: inline-block;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    color:#696969;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 0.7em;
+    margin-left: 15px;
+    top: -7px;
+}
+
+.underline {
+    border-bottom: 1px solid #696969;
+    line-height: 18px;
+}
+
+/* ============================================================ SECTION 5 NOW AVAILABLE*/
+
+
+.nowavailable {
+    height: 330px;
+    width: 100%;  
+    background: -webkit-linear-gradient(left, #2fe6ef 0%,#004af9 100%);
+    position:absolute; 
+}
+
+.nowavailable h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    font-weight: 200;
+    color: white;
+    text-align:center;
+    margin-top: 70px;
+    margin-left:auto;
+}
+
+.nowavailable p {
+    font-family: 'Open Sans', sans-serif; 
+    width: 420px;
+    font-size: 0.7em;
+    font-weight: 100;
+    color:white;
+    text-align:center;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 19px;
+}
+
+.nowavailable img {
+    width: 10%;
+    padding-left: 25px;
+    padding-right: 15px;
+    margin-top:25px;
+}
+
+img.apple_store {
+    width:11.5%;
+}
+
+/* ============================================================ SECTION 6 CLIENT SAYS*/
+
+.clientsays {
+    height:400px;
+    position:relative;
+    margin-top: 400px;
+}
+
+.clientsays h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    font-weight:200;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 120px;
+    color: #458fe1;
+}
+
+/* ============================================================ JENNY + BULLET POINTS*/
+
+.clientsays p.status {
+    margin-top:8px;
+}
+
+.clientsays p{
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 0.7em;
+    line-height: 19px; 
+}
+
+div.rond {
+    width:60px;
+    height:60px;
+    border-radius:50px;
+    background-color:#a0a0a0;
+    margin:0 auto;
+    margin-top: 50px;
+}
+
+.clientsays h3 { 
+font-family: 'Montserrat', sans-serif;
+font-size: 1.3em;
+font-weight:200;
+text-align: center;
+margin: 0 auto;
+margin-top: 20px;
+color: #458fe1;
+}
+
+.clientsays  .bullet_points div{     /*POINTS BLEUS SOUS LES BLOCS*/
+    display: inline-block;
+    background-color:#afd9ef;
+    width: 4px;
+    height: 4px;
+    border-radius:4px;
+    margin-top:50px;
+}
+
+.clientsays div.point {     /*PREMIER POINT BLEU GROSSI*/
+    display: inline-block;
+    background-color:#49a9da;
+    width: 6px;
+    height: 6px;
+    border-radius:6px;
+}
+
+/* ============================================================ SECTION 7 PICTO+TEXTE*/
+
+.performances {
+    height: 250px;
+    width: 100%;  
+    background: -webkit-linear-gradient(left, #0dbafe 0%,#004af9 100%);
+}
+
+.performances i {
+    display: inline-block;
+    color:white;
+    font-size: 50px;
+}
+
+.performances div {
+    display: inline-block;
+    margin-top: 60px;
+    text-align:center;
+    margin-left: 145px;
+
+}
+
+.performances h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.6em;
+    color:white;
+    margin-bottom: auto;
+    width:320px;
+}
+
+h3.texte  {
+    font-weight: 200;
+    font-size: 1em;
+    margin-top: -10px;
+}
+
+/* ============================================================ LIGNES DIAGONALES*/
+#separator div{
+    position: relative;
+}
+
+#separator div::before{
+    content:'';
+    height: 200px;
+    display: inline-block;
+    width: 1px;
+    background-color: white;
+    transform: rotate(15deg);
+    margin-top : 0;
+    position: absolute;
+    left: -20px;
+    top: -30px;
+  }
+  
+  #separator div:first-child::before{
+    width: 0px;
+  }
+
+  /* ============================================================ SECTION 8 PRICING - INTRO TEXTE*/
+
+  .pricing {
+    position:relative;
+    margin-top: 100px;
+    height:700px;
+}
+
+.pricing h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    font-weight:200;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    color: #458fe1;
+}
+
+.pricing p{
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 0.7em;
+    line-height: 19px; 
+}
+
+/* ============================================================ FICHES PRICING*/
+
+section.fiches {
+    margin-top:60px;
+    margin-left: 195px;
+    position:relative;
+
+}
+
+/* ============================================================*/
+
+.fiche1 {
+    width:350px;
+    height:470px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color:#ebe8e8;
+    display:inline-block; 
+    margin-right:60px;  
+}
+.fiche2 {
+    width:350px;
+    height:470px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color:#ebe8e8;
+    display:inline-block;  
+    margin-right:60px;
+    box-shadow: 2px 2px 20px 5px #b4b6be;
+}
+
+.fiche3 {
+    width:350px;
+    height:470px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color:#ebe8e8;
+    display:inline-block;
+    position:absolute;
+}
+
+/* ============================================================*/
+
+.fiches img {
+    width: 20%;
+    padding-top:35px;
+}
+
+.fiches h3{
+    color:#a0a0a0;
+    text-align:center;
+    width: 100%;
+    font-size:0.8em;
+    font-family:'Montserrat',sans-serif;
+    font-weight:400;
+    margin-top:30px;
+    margin-bottom:-25px;
+}
+.fiches h1 {
+    color: black;
+    font-size:2.7em;
+    font-family: 'Lato', sans-serif;
+    font-weight:500;
+    display:inline-block;
+    
+}
+
+h1.month {
+    font-size:0.8em;
+    display:inline-block;
+}
+
+.fiches i {
+    color:#69aefe;
+    padding-right:7px;
+}
+
+.fiches p{
+    text-align:center;
+    margin-left:-225px;
+    margin-top:-10px;
+}
+.fiches button{
+    margin-top:50px;
+    padding: 10px 30px;
+    border-radius:20px;
+    font-family:'Montserrat',sans-serif;
+    color:white;
+    font-weight: 100;
+    background: -webkit-linear-gradient(left, #35acfd 0%,#2ccdfb 100%);
+}
+
+/* ============================================================ SECTION 9 BLOG*/
+
+.blog h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    font-weight:200;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    color: #458fe1;
+}
+
+p.paragraphe{
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 0.7em;
+    line-height: 19px; 
+}
+/* ============================================================BLOCS*/
+
+.container5 {
+    margin-left:200px;
+    display:block;
+    height:490px;
+}
+
+div.blocs {
+    display:inline-block;
+    width:370px;
+    height:230px;
+    background-color:gainsboro ;
+    margin-right: 30px;
+    margin-top:50px;
+
+}
+
+.textes_blog {
+    float:left;
+}
+/* ============================================================TEXTE SOUS BLOCS*/
+
+.textes_blog h3 {
+    font-family: 'OpenSans', sans-serif;
+    font-size:0.8em;
+    color:grey;
+    font-weight: 100;
+
+}
+
+.textes_blog h1 {
+    font-family:'Montserrat', sans-serif;
+    font-size: 1.1em;
+    font-weight:300;
+}
+
+.textes_blog p {
+    width:370px;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 0.9em;
+    padding-top:10px;
+    margin-bottom:55px;
+    line-height: 20px;
+}
+
+.bouton {
+    display:block;
+    padding: 10px 30px;
+    border-radius:20px;
+    font-family:'Montserrat',sans-serif;
+    color:white;
+    font-weight: 100;
+    background: -webkit-linear-gradient(left, #35acfd 0%,#2ccdfb 100%);
+    margin:0 auto;
+    margin-bottom:100px;
+}
+
+/* ==================================================================================== SECTION 10 BLOG*/
+
+.getstarted {
+    height:200px;
+    background: -webkit-linear-gradient(left, #5178ef 0%,#7db9e8 100%);
+}
+
+.getstarted h1 {
+    font-family:'Montserrat', sans-serif;
+    color:white;
+    font-weight:300;
+    font-size: 1.2em;
+    margin-left:310px;
+    display:inline-block;
+    margin-right: -300px;
+    margin-top:100px;
+}
+
+h1.bigger {
+    font-size:1.5em;
+}
+
+.bouton_ {
+ 
+    display:inline-block;
+    float:right;
+    padding: 10px 40px;
+    border: 1px solid #9cc9ee;
+    border-radius:20px;
+    font-family:'Montserrat',sans-serif;
+    color:white;
+    font-weight: 100;
+    background-color: transparent;
+    margin-top:100px;
+    margin-right: 350px;
+}
+
+/* ==================================================================================== FOOTER FUCKING FINALLY*/
+
+footer {
+    background-color:#21242a;
+    height:400px;
+
+}
+
+footer div {
+    float:left;         /* à la place de faire inline-block car aligne sur la baseline*/
+    margin-left:200px;
+    margin-top:100px;
+}
+
+footer h1 {
+    color:white;
+    font-family:'Montserrat', sans-serif;
+    font-size:1.2em;
+    font-weight:300;
+    margin-bottom:25px;
+}
+
+footer ul {
+    color:white;
+    list-style:none;
+    margin-left:0;
+    padding-left:0;
+
+}
+
+footer li {
+    margin-bottom:10px;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 0.9em;
+    color:#696969;
+
+}
+
+/* ==================================================================================== 2e FOOTER*/
+
+section.footer {
+    height:100px;
+    background-color:black;
+}
+
+.footer p {
+    display:inline-block;
+    margin-left:650px;
+    margin-top:50px;
+}
+
+/* ====================================================================================*/
+
+.subscribe p{
+    font-size:0.9em;
+    width:380px;
+
+}
+
+p.name {
+    margin-left:-140px;
+    color: #4486bd;
+    
+}
+
+div.email {
+ 
+    display:inline-block;
+    float:right;
+    padding: 13px 380px 13px 15px;
+    border: 0.7px solid #696969;
+    border-radius:30px;
+    font-family:'Montserrat',sans-serif;
+    font-size:0.9em;
+    color:#696969;
+    font-weight: 100;
+    background-color: transparent;
+    margin-top:25px;
+    margin-right: 208px;
+}
+
+button.sub {
+    padding: 10px 30px;
+    border-radius:20px;
+    font-family:'Montserrat',sans-serif;
+    color:white;
+    font-weight: 100;
+    background: -webkit-linear-gradient(left, #35acfd 0%,#2ccdfb 100%);
+    float:right;
+    margin-top:30px;
+    margin-right: -722px;;
+}
+
+/* ==================================================================================================================*/
+/* ==================================================================================== PAGE FAQ – HEADER*/
+
+.header_faq {
+    height: 400px;
+    margin:-10px; 
+}
+
+    .text_presentation_faq{
+    display: inline-block;
+    clear: both;
+    width: 80%;
+    margin-top: 50px;
+}
+
+.text_presentation_faq h1 { 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    color: white;
+    letter-spacing: 1.5px;
+    font-size: 2.2em;
+    line-height: 45px;
+    margin-left: 540px;
+}
+
+.text_presentation_faq h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    color: white;
+    font-size: 0.9em;
+    width:420px;
+    letter-spacing: 1px;
+    line-height: 15px;
+    margin-top:-15px;
+    margin-left: 534px;
+}
+
+/* ==================================================================================== ASIDE MENU*/
+
+aside {
+    display:block;
+    float:right;
+    width:250px;
+    height:500px;
+    margin-right:300px;
+    margin-top:100px;
+}
+
+.nav h1 { /*jaurais du trouver un moyen de sorties ces valeurs de maniere generale*/
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    margin-top:30px;
+}
+
+.nav h3{       
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 200;
+    font-size: 0.7em;
+    display:inline;
+}
+
+#faq_loupe{
+    display:inline;
+    float:right;
+}
+
+.nav h4 {
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 100;
+    font-size: 0.6em;
+    width:420px;
+    color:gainsboro;
+    margin-top: 1px;
+}
+
+.h3_inline {  /*(10), (21), ...*/
+    display: inline;
+    float:left;
+    margin-left:230px;
+    margin-top:-18px;
+}
+
+.h3_cadre  {
+    padding:3px 5px 3px 5px;
+    border: solid gray 1px;
+}
+
+.nav div{
+    margin-bottom:10px;
+    display:inline-block;
+}
+ /* ==================================================================================== MENU PRINCIPAL FAQ*/
+
+ div.menu_faq {
+    margin-left:300px;
+    margin-top:100px;
+ }
+
+ .menu_faq h3{
+    display:inline;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 0.7em;
+    color:grey;
+    padding-right:40px;
+ }
+
+ .btn_actif{
+     display:inline;
+     padding:7px 10px 7px 9px;
+     color:black;
+     background-color:gainsboro;
+     border-radius: 2px;
+ }
+
+ /* ==================================================================================== DIV TEXTE PRINCIPAL_HR*/
+
+ hr.separation {
+    margin-left:0px;
+    width:650px;
+    margin-bottom:15px;
+    border-color: gainsboro;
+ }
+
+ /* ==================================================================================== 3 COLONNES*/
+
+ .helpfull_links {
+     display:inline-block;
+     width:150px;
+     margin-right:65px;
+ }
+
+ .contact_support {
+     display: inline-block;
+     width:150px;
+     margin-right:65px;
+ }
+
+ .getting_started {
+    display: inline-block;
+    width:150px;
+}
+
+h1.titre_col {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    margin-top:130px;
+    margin-bottom:30px;  
+}
+
+ /* ==================================================================================== BOUTONS SUPPORT*/
+
+.btn_support h3{
+    color: black;
+}
+
+.btn_support {
+    margin-top:65px;
+    margin-bottom:130px;
+}
+
+h3.btn_select {
+    display:inline-block;
+    padding:10px;
+    border:solid gainsboro 1px;
+}
+
+div.btn_nonSelect {
+    display: inline-block;
+    padding-left:50px;
+}
+
+/* ==================================================================================================================*/
+ /* ==================================================================================== PAGE BLOG*/
+ div.main_blog {
+    margin-left:300px;
+    margin-top:100px;
+    width:600px;
+    height:1350px;
+ }
+ h1.h1_blog {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    color: white;
+    letter-spacing: 1.5px;
+    font-size: 2.2em;
+    line-height: 45px;
+    margin-left: 480px;
+ }
+
+ div.bloc_photo {
+     width:100%;
+     height:240px;
+     background-color: gainsboro;
+ }
+
+ .main_blog h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    margin-top:50px;
+}
+
+.main_blog h3{       
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 200;
+    font-size: 0.7em;
+    display:inline;
+    color:gainsboro;
+}
+.main_blog h1 {
+    margin-bottom:15px;
+}
+.main_blog p {
+    width:100%;
+    color:#aeb9c5;
+    line-height: 20px;
+    margin-top:15px;
+}
+
+.container_reseaux {
+    margin-top:40px;
+}
+h1.share {
+    display: inline;
+    font-weight: 600;
+    font-size:70%;
+}
+
+.icons_blog {
+    display: inline;
+}
+
+.icons_blog i {
+    color:grey;
+    font-size: 70%;
+    padding-right:10px;
+}
+ /* ==================================================================================== COMMENTS*/
+.comments {
+    width:65%;
+    display: inline-block;
+    margin-bottom:20px;
+}
+
+.petite_photo {
+    display: inline-block;
+    width:50px;
+    height: 50px;
+    margin:20px 10px 30px 0px;
+    background-color: gainsboro;
+}
+.comments p {
+    margin-top:0px;
+}
+.comments h3{
+    font-family: 'Montserrat', sans-serif;
+    color:gray;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-right:20px;
+}
+ /* ==================================================================================== FORM*/
+
+div.ligne {
+    width: 35%;
+    display:inline-block;
+    font-size:0.6em;
+    margin-right:30px;
+    margin-top:40px;
+}
+
+.ligne h4{
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 100;
+    font-size: 0.6em;
+    width:420px;
+    color:grey;
+    margin-top: 1px;
+}
+.bouton_blog {
+    display:block;
+    padding: 10px 30px;
+    border-radius:20px;
+    font-family:'Montserrat',sans-serif;
+    color:white;
+    font-weight: 100;
+    background: -webkit-linear-gradient(left, #35acfd 0%,#2ccdfb 100%);
+    margin-bottom:50px;
+    margin-top:40px;
+}
+
+/* ==================================================================================================================*/
+ /* ==================================================================================== PAGE BLOG MAIN_PRESENTATION*/
+ .text_presentation_blog {
+    display: inline-block;
+    clear: both;
+    width: 80%;
+    margin-top: 50px;
+}
+
+div.section_blog {
+    margin-left:300px;
+    margin-top:100px;
+    width:670px;
+    height:1180px;
+ }
+
+ /* ====================================================================================HEADER*/
+ .header_blog {
+    height: 420px;
+    margin:-10px; 
+}
+
+.text_presentation_blog h1 { 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    color: white;
+    letter-spacing: 1.5px;
+    font-size: 2.2em;
+    line-height: 45px;
+    margin-left: 500px;
+}
+
+.text_presentation_blog h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    color: white;
+    font-size: 0.9em;
+    width:420px;
+    letter-spacing: 1px;
+    line-height: 15px;
+    margin-top:-15px;
+    margin-left: 510px;
+}
+/* =========================================================================================================SECTION BLOG*/
+
+ .section_blog h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 0.8em;
+    margin-top:15px;
+}
+
+.section_blog h3{  
+    display: inline-block;     
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 200;
+    font-size: 0.7em;
+}
+
+.section_blog h4 {
+    color:gray;
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 100;
+    font-size: 0.6em;
+    width:420px;
+    color:gainsboro;
+    margin-top: -1px;
+}
+
+.article1 {
+    display:inline-block;
+    width:48%;
+}
+.article2 {
+    display:inline-block;
+    width:48%;
+    float:right;
+}
+
+.photo_blog {
+    width:100%;
+    height:150px;
+    background-color: gainsboro;
+    margin-bottom: 20px;
+    margin-top:30px;
+}
+ /* ====================================================================================MENU POUR CHANGER DE PAGE --> SUIVANTE*/
+
+.section_nextpage {
+    margin-left:250px;
+    width:1000px;
+    height:200px;
+}
+
+div.choixpage {
+    margin-left:300px;
+}
+
+.choixpage div {
+    display:inline-block;
+    font-family: 'Lato', sans-serif; 
+    font-weight: 200;
+    font-size: 0.8em;
+    padding:7px;
+}
+
+ div.numero {
+    display:inline-block;
+    font-family: 'Lato', sans-serif; 
+    font-weight: 200;
+    font-size: 0.8em;
+    padding:7px;
+ }
+
+.choixpage i {
+    color: grey;
+    font-size: 0.8em;
+}
+
+
+.numero1 {
+    display: inline-block;
+    font-family: 'Lato', sans-serif; 
+    font-weight: 200;
+    font-size: 0.8em;
+    text-decoration: underline cornflowerblue;
+    color:cornflowerblue;
+}
+
+.bouton_apres:hover {
+    color: cornflowerblue;
+}
+
+.bouton_avant {
+    margin-right:30px;
+    display:inline-block;
+    font-family: 'Lato', sans-serif; 
+    font-weight: 200;
+    font-size: 0.8em;
+    padding:7px;
+}
+
+.bouton_apres {
+    margin-left:30px;
+    display:inline-block;
+    font-family: 'Lato', sans-serif; 
+    font-weight: 200;
+    font-size: 0.8em;
+    padding:7px;
+}
